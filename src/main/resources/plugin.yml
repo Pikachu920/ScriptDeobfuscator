@@ -1,0 +1,6 @@
+name: Deobfusactor
+description: A simple deobfuscator for skript obfuscators using options
+main: com.pikachu.deobfuscator.Deobfuscator
+version: 1.0
+author: sky_high
+depend: [Skript]
