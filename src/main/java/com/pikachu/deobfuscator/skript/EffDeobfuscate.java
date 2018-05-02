@@ -106,7 +106,7 @@ public class EffDeobfuscate extends Effect {
 			for (Node n : script.getMainNode()) {
 				if (n instanceof SectionNode) {
 					SectionNode node = (SectionNode) n;
-					if ("options".equals(n.getKey())) { // hard to believe skript doesn't have a method for this, its just hardcoded
+					if ("options".equalsIgnoreCase(n.getKey())) { // hard to believe skript doesn't have a method for this, its just hardcoded
 						node.convertToEntries(0);
 						for (Node option : node) {
 							if (!(option instanceof EntryNode)) {
